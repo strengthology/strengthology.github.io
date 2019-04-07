@@ -1,12 +1,15 @@
 (() => {
-  const user = module_user;
+  // runtime imports
+  const User = ModUser;
 
   console.log("Running test.js");
 
-  console.assert(user != undefined);
+  console.assert(User != undefined);
+  console.assert(User.with_pass("loremipsum") != undefined);
 
-  console.log(user);
+  let u = User.with_pass("loremipsum");
+  console.log(u);
 
-  //console.assert(user.with_pass("lorem") === false);
+  console.log(User);
 
 })();

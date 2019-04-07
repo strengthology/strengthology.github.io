@@ -1,6 +1,6 @@
 'use strict';
 
-const module_user = ( () => {
+const ModUser = (() => {
   // private
   function User() {
     this.name = "",
