@@ -7,7 +7,7 @@ module.exports = {
   entry: ['promise-polyfill', 'whatwg-fetch', './src/index.js'],
   // where to put the transpiled javascript
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'bin'),
     filename: 'main.js'
   },
 
@@ -34,17 +34,7 @@ module.exports = {
   devtool: 'source-map',
 
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist')
+    contentBase: path.resolve(__dirname, 'bin')
   }
-  //   port: 1313,
-  //   compress: true,
-  //   watchContentBase: true
-  //   send requests that start with "/api" to our api server
-  //   proxy: {
-  //     '/api': {
-  //       target: 'http://localhost:3000',
-  //       pathRewrite: {'^/api': ''}
-  //     }
-  //   }
-  // }
+  
 };
