@@ -12,3 +12,5 @@ class User {
     this.sessions = [];/*<Session>*/
   }
 }
+
+export {User, UserLogin};

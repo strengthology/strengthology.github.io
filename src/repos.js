@@ -3,3 +3,5 @@ class Database {
     this.exists = false;
   }
 }
+
+export {Database};
