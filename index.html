@@ -5,25 +5,13 @@
 </head>
 <body>
     <nav id="nav">
-      <h6>Strenthology</h6>
+      <h4>{{ header }}</h4>
+      <p>{{ art }}</p>
     </nav>
     <div id="body">
-      <form>
-  			<div>
-  				<label>Username</label>
-  				<input type="text">
-  			</div>
-  			<div>
-  				<label>Password</label>
-  				<input type="password">
-  			</div>
-  			<div>
-  				<button type="submit">Sign In</button>
-  			</div>
-  		</form>
-    </div>
     <div id="footer">
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!-- VueJS -->
     <script type="module" src="src/models.js"></script> <!-- Abstract layer -->
     <script type="module" src="src/repos.js"></script> <!-- CRUD layer -->
     <script type="module" src="src/controllers.js"></script> <!-- View Layer -->
