@@ -15,4 +15,6 @@ req.onerror = (event) => {
 req.onsuccess = (event) => {
   console.log("Success");
   db = event.target.result;
+  console.log(db);
 };
+console.log(idb);
