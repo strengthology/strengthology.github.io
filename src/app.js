@@ -1,3 +1,4 @@
+import {Heap, Option} from '../util/f.js'
 import {User} from './models.js'
 import {UserController} from './controllers.js'
 
@@ -53,4 +54,4 @@ let view1 = new Vue({
     header: title,
     art: charMul('- ', title.length - 2) + '-',
   }
-}));
+});
