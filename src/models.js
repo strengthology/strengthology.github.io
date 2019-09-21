@@ -1,25 +1,40 @@
-class Session {
-    constructor(){
-        this.date = "";
-        this.time = "";
-        this.sets = [];
-    }
+const user = {
+  id: "",
+  name: "",
+  password: "",
 }
 
-class Set {
-    constructor(){
-        this.movement = "";
-        this.reps = 0;
-        this.time = 0;
-        this.rpe = 0;
-    }
+const movement = {
+  id: "",
+  name: "",
 }
 
-class User {
-    constructor(username, password){
-        this.username = username;
-        this.password = password;
-    }
+const session = {
+  id: "",
+  date: "",
+  duration: 0, // in minutes
+  volume: 0, // real
 }
 
-export {User, Set, Session};
+const sessionsToUsers = {
+  userId: "",
+  sessionId: "",
+}
+
+const set = {
+  id: "",
+  movementId: "",
+  reps: 0,
+  weight: 0,
+  rpe: 0,
+  duration: 0,
+  tempo: 0,
+  volume: 0,
+}
+
+const setsToSessions = {
+  setId: "",
+  userId: "",
+}
+
+//export {User, Set, Session};
