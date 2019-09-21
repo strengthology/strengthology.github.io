@@ -1,0 +1,27 @@
+user:
+  id [A]
+
+movement:
+  id [D]
+  name
+
+session:
+  id [B]
+  date
+  duration (int)
+  volume (real)
+
+users_sessions:
+  user_id -> [A]
+  session_id -> [B]
+
+set:
+  id [C]
+  time
+  movement_id -> [D]
+  reps (int)
+  weight (real)
+  rpe (real)
+  duration (null)
+  tempo (null)
+  volume (real)

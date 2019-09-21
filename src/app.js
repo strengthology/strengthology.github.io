@@ -1,4 +1,4 @@
-import {Heap, Option} from '../util/f.js'
+import {Heap, Option, type} from '../util/f.js'
 import {User} from './models.js'
 import {UserController} from './controllers.js'
 
@@ -12,6 +12,8 @@ const charMul = (char, num) => {
   }
   return r;
 }
+
+console.log("type of charMul: " + Object.keys(charMul));
 
 /* TODO:
 Steps:
