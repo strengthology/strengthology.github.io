@@ -18,9 +18,9 @@ printf "Building project\n"
 
 # make the bin folder if it does not exist
 [ ! -d 'bin' ] && mkdir 'bin'
-
+# reset app.js
 echo "" > "bin/app.js"
-
+# run the build algorithm
 build ""
 
 printf "Build finished\n"
